@@ -9,7 +9,7 @@ import Foundation
 struct PokeFact: Codable {
 let count: Int
 let next: String
-let previous: String
+let previous: String?
 let results: [MyResult]
 
 }

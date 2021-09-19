@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Tarea_apiApp: App {
+    @StateObject var appInfo = AppInformation()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(appInfo)
         }
     }
 }
